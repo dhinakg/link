@@ -1,3 +1,8 @@
 '.platform-darwin atom-workspace':
-  'ctrl-O': 'link:open'
+  'ctrl-alt-shift-o': 'link:open'
+
+'.platform-win32 atom-workspace':
+  'ctrl-alt-shift-o': 'link:open'
+
+'.platform-linux atom-workspace':
   'ctrl-alt-shift-o': 'link:open'
