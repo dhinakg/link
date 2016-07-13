@@ -1,2 +1,3 @@
 '.platform-darwin atom-workspace':
   'ctrl-O': 'link:open'
+  'ctrl-alt-shift-o': 'link:open'
