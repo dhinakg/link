@@ -19,7 +19,6 @@ openLink = ->
     link = linkForName(editor.getBuffer(), link)
 
   {protocol} = url.parse(link)
-  if protocol is 'http:' or protocol is 'https:' or protocol is 'file:' or protocol is 'mailto:' or protocol is 'ftp:' or protocol is 'sftp:' or protocol is 'appdata:' or protocol is 'ms-settings:'
     shell.openExternal(link)
 
 # Get the link under the cursor in the editor
