@@ -19,7 +19,7 @@ openLink = ->
     link = linkForName(editor.getBuffer(), link)
 
   {protocol} = url.parse(link)
-    shell.openExternal(link)
+  shell.openExternal(link)
 
 # Get the link under the cursor in the editor
 #
