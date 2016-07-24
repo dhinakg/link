@@ -2,7 +2,7 @@
   "name": "link",
   "version": "0.32.0",
   "main": "./lib/link",
-  "description": "Opens http/https links under the cursor using `ctrl-shift-o`.",
+  "description": "Opens http/https/file links under the cursor using `ctrl-alt-shift-o` or 'cmd-alt-shift-o'.",
   "license": "MIT",
   "repository": "https://github.com/dhinakg/link",
   "engines": {
