@@ -1,6 +1,6 @@
 {shell} = require 'electron'
 
-describe "link package", ->
+describe "uriopener package", ->
   beforeEach ->
     waitsForPromise ->
       atom.packages.activatePackage('language-gfm')
@@ -12,8 +12,8 @@ describe "link package", ->
       atom.packages.activatePackage('language-hyperlink')
 
     waitsForPromise ->
-      activationPromise = atom.packages.activatePackage('link')
-      atom.commands.dispatch(atom.views.getView(atom.workspace), 'link:open')
+      activationPromise = atom.packages.activatePackage('uriopener')
+      atom.commands.dispatch(atom.views.getView(atom.workspace), 'uriopener:open')
       activationPromise
 
   describe "when the cursor is on a link", ->
@@ -26,25 +26,25 @@ describe "link package", ->
         editor.setText("// \"http://github.com\"")
 
         spyOn(shell, 'openExternal')
-        atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+        atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
         expect(shell.openExternal).not.toHaveBeenCalled()
 
         editor.setCursorBufferPosition([0, 4])
-        atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+        atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
 
         expect(shell.openExternal).toHaveBeenCalled()
         expect(shell.openExternal.argsForCall[0][0]).toBe 'http://github.com'
 
         shell.openExternal.reset()
         editor.setCursorBufferPosition([0, 8])
-        atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+        atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
 
         expect(shell.openExternal).toHaveBeenCalled()
         expect(shell.openExternal.argsForCall[0][0]).toBe 'http://github.com'
 
         shell.openExternal.reset()
         editor.setCursorBufferPosition([0, 21])
-        atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+        atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
 
         expect(shell.openExternal).toHaveBeenCalled()
         expect(shell.openExternal.argsForCall[0][0]).toBe 'http://github.com'
@@ -65,18 +65,18 @@ describe "link package", ->
 
           spyOn(shell, 'openExternal')
           editor.setCursorBufferPosition([0, 0])
-          atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+          atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
           expect(shell.openExternal).not.toHaveBeenCalled()
 
           editor.setCursorBufferPosition([0, 20])
-          atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+          atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
 
           expect(shell.openExternal).toHaveBeenCalled()
           expect(shell.openExternal.argsForCall[0][0]).toBe 'http://github.com'
 
           shell.openExternal.reset()
           editor.setCursorBufferPosition([1, 24])
-          atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+          atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
 
           expect(shell.openExternal).not.toHaveBeenCalled()
 
@@ -89,10 +89,10 @@ describe "link package", ->
         editor.setText("// ftp://github.com\n")
 
         spyOn(shell, 'openExternal')
-        atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+        atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
         expect(shell.openExternal).not.toHaveBeenCalled()
 
         editor.setCursorBufferPosition([0, 5])
-        atom.commands.dispatch(atom.views.getView(editor), 'link:open')
+        atom.commands.dispatch(atom.views.getView(editor), 'uriopener:open')
 
         expect(shell.openExternal).not.toHaveBeenCalled()

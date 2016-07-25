@@ -1,16 +1,16 @@
 {
-  "name": "link",
+  "name": "uriopener",
   "version": "0.32.0",
-  "main": "./lib/link",
-  "description": "Opens http/https/file links under the cursor using `ctrl-alt-shift-o` or 'cmd-alt-shift-o'.",
+  "main": "./lib/uriopener",
+  "description": "Opens URIs under the cursor using `ctrl-alt-shift-o` or 'cmd-alt-shift-o'.",
   "license": "MIT",
-  "repository": "https://github.com/dhinakg/link",
+  "repository": "https://github.com/dhinakg/uriopener",
   "engines": {
     "atom": "*"
   },
   "activationCommands": {
     "atom-workspace": [
-      "link:open"
+      "uriopener:open"
     ]
   },
   "dependencies": {

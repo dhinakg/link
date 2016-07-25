@@ -1,9 +1,9 @@
 '.platform-darwin atom-workspace':
-  'cmd-alt-shift-o': 'link:open'
+  'cmd-alt-shift-o': 'uriopener:open'
 
 '.platform-win32 atom-workspace':
-  'ctrl-alt-shift-o': 'link:open'
+  'ctrl-alt-shift-o': 'uriopener:open'
 
 '.platform-linux atom-workspace':
-  'ctrl-alt-shift-o': 'link:open'
-  'cmd-alt-shift-o': 'link:open'
+  'ctrl-alt-shift-o': 'uriopener:open'
+  'cmd-alt-shift-o': 'uriopener:open'
