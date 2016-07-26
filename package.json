@@ -17,7 +17,5 @@
     "first-mate": "^5.0",
     "underscore-plus": "1.x"
   },
-  "devDependencies": {
-    "coffeelint": "^1.9.7"
   }
 }
