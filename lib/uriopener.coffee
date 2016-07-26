@@ -7,7 +7,9 @@ selector = null
 module.exports =
   activate: ->
     atom.commands.add('atom-workspace', 'uriopener:open', openLink)
-
+    atom.views.getView(atom.workspace).on 'click', (event) ->
+      openLink() if event.metaKey
+      
 openLink = ->
   editor = atom.workspace.getActiveTextEditor()
   return unless editor?
