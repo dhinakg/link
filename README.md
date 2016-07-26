@@ -1,4 +1,5 @@
 # uriopener package
 [![OS X Build Status](https://img.shields.io/travis/dhinakg/uriopener.svg?maxAge=1&style=flat-square)](https://travis-ci.org/dhinakg/uriopener) [![Windows Build Status](https://img.shields.io/appveyor/ci/dhinakg/uriopener.svg?maxAge=1&style=flat-square)](https://ci.appveyor.com/project/dhinakg/uriopener/branch/master) [![Dependency Status](https://img.shields.io/david/dhinakg/uriopener.svg?maxAge=1&style=flat-square)](https://david-dm.org/dhinakg/uriopener) [![Downloads](https://img.shields.io/apm/dm/uriopener.svg?maxAge=1&style=flat-square)](https://atom.io/packages/uriopener) [![Version](https://img.shields.io/apm/v/uriopener.svg?maxAge=1&style=flat-square)](https://atom.io/packages/uriopener) [![License](https://img.shields.io/apm/l/uriopener.svg?maxAge=1&style=flat-square)](https://atom.io/packages/uriopener)
+
 Opens URIs under the cursor using <kbd>ctrl-alt-shift-o</kbd> or <kbd>cmd-alt-shift-o</kbd> for Linux (because you can run Linux on a Mac) and Mac.
 Based on [![link](https://img.shields.io/badge/package-link-blue.svg?style=flat-square)](https://atom.io/packages/link) with a few additions.
