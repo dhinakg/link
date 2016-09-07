@@ -2,7 +2,7 @@
   "name": "uriopener",
   "version": "1.1.0",
   "main": "./lib/uriopener",
-  "description": "Opens URIs under the cursor using `ctrl-alt-shift-o`, 'cmd-alt-shift-o', or 'ctrl/cmd-click'.",
+  "description": "Opens URIs under the cursor using `ctrl-alt-shift-o` or 'cmd-alt-shift-o'.",
   "license": "MIT",
   "repository": "https://github.com/dhinakg/uriopener",
   "engines": {
@@ -14,7 +14,7 @@
     ]
   },
   "dependencies": {
-    "first-mate": "^5.0",
+    "first-mate": "6.0.0",
     "underscore-plus": "1.x"
   },
   "devDependencies": {
