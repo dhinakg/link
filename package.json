@@ -1,6 +1,6 @@
 {
   "name": "uriopener",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "./lib/uriopener",
   "description": "Opens URIs under the cursor using `ctrl-alt-shift-o` or 'cmd-alt-shift-o'.",
   "license": "MIT",
